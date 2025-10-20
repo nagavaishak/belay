@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "trainingDate": "2025-10-20T16:20:06.948Z",
+    "totalTransactions": 100,
+    "programs": 2
+  },
+  "programs": {
+    "JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB": {
+      "programId": "JUP4Fb2cqiRUcaTHdrPC8h2gNsA2ETXiPDD33WcGuJB",
+      "programName": "Jupiter",
+      "totalTransactions": 50,
+      "successfulTransactions": 43,
+      "failedTransactions": 7,
+      "successRate": 86,
+      "avgComputeUnits": 283929,
+      "maxComputeUnits": 474623,
+      "minComputeUnits": 109475,
+      "p95ComputeUnits": 453848,
+      "recommendedComputeUnits": 499233,
+      "avgFee": 0.000009480930232558139,
+      "recommendedPriorityFee": 0.000011,
+      "avgAccountCount": 19
+    },
+    "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8": {
+      "programId": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+      "programName": "Raydium",
+      "totalTransactions": 50,
+      "successfulTransactions": 37,
+      "failedTransactions": 13,
+      "successRate": 74,
+      "avgComputeUnits": 90844,
+      "maxComputeUnits": 245733,
+      "minComputeUnits": 29339,
+      "p95ComputeUnits": 241969,
+      "recommendedComputeUnits": 266166,
+      "avgFee": 0.00011778670270270271,
+      "recommendedPriorityFee": 0.000141,
+      "avgAccountCount": 16
+    }
+  }
+}
