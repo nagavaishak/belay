@@ -9,6 +9,7 @@ import MouseSpotlight from '@/components/MouseSpotlight';
 import ScrollProgress from '@/components/ScrollProgress';
 import { ArrowRight, Zap, Sparkles, BarChart3, Shield, Brain, XCircle, AlertTriangle, Clock, Network } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { CheckCircle2 } from 'lucide-react';
 //Not Using these
 import CongestionMonitor from '@/components/CongestionMonitor';
 import WalletAnalysis from '@/components/WalletAnalysis';
@@ -165,59 +166,66 @@ export default function Home() {
   <span className="text-xs text-purple-400 font-semibold">🏆 Colosseum Cypherpunk Hackathon 2025</span>
 </div>
 
+
 {/* Technical Badge */}
 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 backdrop-blur-sm">
   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
   <span className="text-xs text-green-400 font-medium">Trained on 100+ mainnet transactions</span>
 </div>
 
-              {/* Headline */}
-              <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]">
-                  Stop losing money on failed transactions
-                </h1>
-                <p className="text-xl text-white/60 leading-relaxed max-w-xl">
-                  ML-powered transaction optimization for Solana. Automatically retry failed transactions with smarter parameters.
-                </p>
+{/* Status Badge */}
+<div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 backdrop-blur-sm">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                <span className="text-xs text-green-400 font-medium">Developer SDK • In Development</span>
               </div>
 
-              {/* Stats row */}
-              <div className="flex items-center gap-8 pt-4">
+              {/* Main headline */}
+              <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tight leading-none animate-fade-in-up opacity-0 [animation-delay:100ms]">
+                Developer SDK for
+                <br />
+                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-green-400 bg-clip-text text-transparent">
+                  Solana Transactions
+                </span>
+              </h1>
+
+              {/* Subheadline */}
+              <p className="text-lg md:text-xl text-white/50 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in-up opacity-0 [animation-delay:200ms]">
+                Integrate ML-powered parameter optimization in one line of code. Increase your users' transaction success rates from 74% to 99%.
+              </p>
+
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-12 max-w-3xl mx-auto animate-fade-in-up opacity-0 [animation-delay:400ms]">
                 <div>
-                  <div className="text-3xl font-bold text-white mb-1">99%</div>
-                  <div className="text-sm text-white/50">Success rate</div>
+                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">SDK</div>
+                  <div className="text-sm text-white/40">One-line integration</div>
                 </div>
-                <div className="w-px h-12 bg-white/10"></div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-1">85%</div>
-                  <div className="text-sm text-white/50">ML accuracy</div>
+                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-pink-400 to-green-400 bg-clip-text text-transparent">85%</div>
+                  <div className="text-sm text-white/40">ML accuracy</div>
                 </div>
-                <div className="w-px h-12 bg-white/10"></div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-1">3x</div>
-                  <div className="text-sm text-white/50">RPC redundancy</div>
+                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">99%</div>
+                  <div className="text-sm text-white/40">Target success rate</div>
                 </div>
               </div>
 
-              {/* CTA - Single focused action */}
-          <div className="flex items-center gap-4 pt-4">
-            <Button 
-              size="lg"
-              className="bg-white text-black hover:bg-white/90 font-semibold px-8 shadow-2xl shadow-purple-500/20"
-              onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Try Live Demo
-            </Button>
-            <a 
-              href="https://github.com/nagavaishak/belay"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/60 hover:text-white transition-colors text-sm font-medium flex items-center gap-2 group"
-            >
-              <span>View Source Code</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-          </div>
+              {/* CTA - Developer focused */}
+              <div className="flex items-center gap-4 pt-4 animate-fade-in-up opacity-0 [animation-delay:300ms]">
+                <Button 
+                  size="lg"
+                  className="bg-white text-black hover:bg-white/90 font-semibold px-8 shadow-2xl shadow-purple-500/20"
+                  onClick={() => window.open('https://github.com/nagavaishak/belay', '_blank')}
+                >
+                  View on GitHub
+                </Button>
+                <a 
+                  href="#demo"
+                  className="text-white/60 hover:text-white transition-colors text-sm font-medium flex items-center gap-2 group"
+                >
+                  <span>See Demo</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
 
               {/* Tech stack badges */}
               <div className="flex items-center gap-3 pt-6">
@@ -891,6 +899,155 @@ export default function Home() {
         </svg>
       </button>
 
+      {/* Roadmap Section - NEW */}
+      <section className="relative py-32 px-6 border-t border-white/5">
+        <div className="container mx-auto max-w-6xl">
+          
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+              Development roadmap
+            </h2>
+            <p className="text-xl text-white/50 max-w-3xl mx-auto">
+              Clear path from hackathon MVP to production-ready infrastructure
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            
+            {/* Phase 1 */}
+            <div className="relative pl-8 pb-8 border-l-2 border-green-500">
+              <div className="absolute -left-3 top-0 w-5 h-5 rounded-full bg-green-500 border-4 border-black" />
+              <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 border border-green-500/20 rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="px-3 py-1 rounded-full bg-green-500/20 border border-green-500/30">
+                    <span className="text-xs font-semibold text-green-400">CURRENT</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">Phase 1: Hackathon MVP</h3>
+                </div>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5" />
+                      <span className="text-sm text-white/70">ML model trained on 100+ transactions</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5" />
+                      <span className="text-sm text-white/70">Jupiter & Raydium support</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5" />
+                      <span className="text-sm text-white/70">Network monitoring algorithms</span>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5" />
+                      <span className="text-sm text-white/70">Auto-retry logic (code ready)</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5" />
+                      <span className="text-sm text-white/70">Interactive demo</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5" />
+                      <span className="text-sm text-white/70">Open-source on GitHub</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 2 */}
+            <div className="relative pl-8 pb-8 border-l-2 border-purple-500/30">
+              <div className="absolute -left-3 top-0 w-5 h-5 rounded-full bg-purple-500/30 border-4 border-black" />
+              <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/30">
+                    <span className="text-xs font-semibold text-purple-400">WEEKS 1-2</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">Phase 2: Production Integration</h3>
+                </div>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Connect to Solana Devnet/Mainnet</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Real transaction testing</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">NPM package release</span>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">API endpoint deployment</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Developer documentation</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-purple-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Beta testing with 10 developers</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 3 */}
+            <div className="relative pl-8 pb-8 border-l-2 border-blue-500/30">
+              <div className="absolute -left-3 top-0 w-5 h-5 rounded-full bg-blue-500/30 border-4 border-black" />
+              <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 rounded-xl p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="px-3 py-1 rounded-full bg-blue-500/20 border border-blue-500/30">
+                    <span className="text-xs font-semibold text-blue-400">MONTHS 3-4</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-white">Phase 3: Advanced Features</h3>
+                </div>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-blue-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">10+ program support (Drift, Orca, Mango)</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-blue-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Analytics dashboard</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-blue-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Jito bundle support</span>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-blue-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Real-time ML training</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-blue-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Multi-RPC routing</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <div className="w-4 h-4 rounded-full border-2 border-blue-400/50 mt-0.5" />
+                      <span className="text-sm text-white/60">Enterprise features</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="relative border-t border-white/5 py-16 px-6">
         <div className="container mx-auto max-w-6xl">
@@ -924,8 +1081,8 @@ export default function Home() {
             <div>
               <h4 className="text-sm font-semibold mb-4">Resources</h4>
               <ul className="space-y-3">
-                <li><a href="https://github.com/YOUR-USERNAME/belay" target="_blank" rel="noopener noreferrer" className="text-sm text-white/50 hover:text-white transition-colors">GitHub</a></li>
-                <li><a href="https://github.com/YOUR-USERNAME/belay#readme" target="_blank" rel="noopener noreferrer" className="text-sm text-white/50 hover:text-white transition-colors">Documentation</a></li>
+                <li><a href="https://github.com/nagavaishak/belay" target="_blank" rel="noopener noreferrer" className="text-sm text-white/50 hover:text-white transition-colors">GitHub</a></li>
+                <li><a href="https://github.com/nagavaishak/belay#readme" target="_blank" rel="noopener noreferrer" className="text-sm text-white/50 hover:text-white transition-colors">Documentation</a></li>
               </ul>
             </div>
 
