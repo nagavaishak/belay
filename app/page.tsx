@@ -151,21 +151,20 @@ export default function Home() {
                 Automated recovery infrastructure that eliminates failed transactions. Retry engine + multi-RPC routing + smart fees in one SDK.
               </p>
 
-              {/* UPDATED STATS */}
               <div className="grid grid-cols-3 gap-12 max-w-3xl mx-auto animate-fade-in-up opacity-0 [animation-delay:400ms]">
-                <div>
-                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">17.72%</div>
-                  <div className="text-sm text-white/40">Failures we prevent</div>
-                </div>
-                <div>
-                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-pink-400 to-green-400 bg-clip-text text-transparent">80%</div>
-                  <div className="text-sm text-white/40">Recovery success</div>
-                </div>
-                <div>
-                  <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">99%</div>
-                  <div className="text-sm text-white/40">Target success rate</div>
-                </div>
-              </div>
+  <div>
+    <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">400</div>
+    <div className="text-sm text-white/40">Training transactions</div>
+  </div>
+  <div>
+    <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-pink-400 to-green-400 bg-clip-text text-transparent">82.5%</div>
+    <div className="text-sm text-white/40">ML accuracy</div>
+  </div>
+  <div>
+    <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">99%</div>
+    <div className="text-sm text-white/40">Target success rate</div>
+  </div>
+</div>
 
               <div className="flex items-center gap-4 pt-4 animate-fade-in-up opacity-0 [animation-delay:300ms]">
                 <Button 
