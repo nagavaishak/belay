@@ -11,7 +11,10 @@
     "analyze": "tsx scripts/analyzeData.ts",
     "collect-labeled": "tsx scripts/collectLabeledData.ts",
     "test-belay": "tsx scripts/testBelay.ts",
-    "test-belay-readonly": "tsx scripts/testBelayReadOnly.ts"
+    "test-belay-readonly": "tsx scripts/testBelayReadOnly.ts",
+    "collect-ml-data": "tsx scripts/collectDataML.ts",
+    "test-ml": "tsx scripts/testMLOnly.ts",
+    "reanalyze-failures": "tsx scripts/reanalyzeFailures.ts"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

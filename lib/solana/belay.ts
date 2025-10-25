@@ -3,30 +3,38 @@ import { Connection, Transaction, Signer } from '@solana/web3.js';
 import { sendWithAutoRetry } from './retryEngine';
 import { sendViaMultiRPC } from './rpcRouter';
 import { calculateOptimalPriorityFee, microlamportsToSOL } from './feeOptimizer';
+import { MLPredictor } from './mlPredictor';
 
 export interface BelayOptions {
   rpcUrl?: string;
   useMultiRPC?: boolean;
   autoRetry?: boolean;
   maxRetries?: number;
+  useML?: boolean;
 }
 
 export class Belay {
   private connection: Connection;
   private options: BelayOptions;
+    private mlPredictor?: MLPredictor;
 
   constructor(options: BelayOptions = {}) {
     this.options = {
       rpcUrl: options.rpcUrl || 'https://api.mainnet-beta.solana.com',
       useMultiRPC: options.useMultiRPC ?? false, // Default to retry (simpler)
       autoRetry: options.autoRetry ?? true,
-      maxRetries: options.maxRetries ?? 3
+      maxRetries: options.maxRetries ?? 3,
+      useML: options.useML ?? true,
     };
 
     this.connection = new Connection(
         this.options.rpcUrl || 'https://api.mainnet-beta.solana.com', 
         'confirmed'
       );
+
+    if (this.options.useML) {  // ADD THIS BLOCK
+        this.mlPredictor = new MLPredictor();
+      }
   }
 
   async sendTransaction(

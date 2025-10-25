@@ -2,6 +2,14 @@
 import { Connection, Keypair, SystemProgram, Transaction } from '@solana/web3.js';
 import { Belay } from '../lib/solana/belay';
 
+// Add at the top
+const belay = new Belay({
+  rpcUrl: 'https://api.devnet.solana.com',
+  autoRetry: true,
+  maxRetries: 3,
+  useML: true  // Enable ML predictions!
+});
+
 async function testBelay() {
   console.log('🧪 Testing BELAY on Devnet...\n');
 
