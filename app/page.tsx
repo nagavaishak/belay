@@ -439,7 +439,7 @@ export default function Home() {
 
           <div className="max-w-2xl mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Three layers of reliability
+              Four layers of reliability
             </h2>
             <p className="text-lg text-white/60 leading-relaxed">
               BELAY combines automated recovery, intelligent routing, and real-time optimization to ensure your transactions succeed.
@@ -484,6 +484,45 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* FEATURE 2 - ML SUCCESS PREDICTOR */}
+<div className="grid md:grid-cols-5 gap-8 mb-8 p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-500 group">
+  <div className="md:col-span-2 space-y-4">
+    <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-600">
+      <Brain className="w-6 h-6 text-white" />
+    </div>
+    <h3 className="text-2xl font-bold">ML Success Predictor</h3>
+    <p className="text-white/60 leading-relaxed">
+      Random Forest classifier trained on 400 real mainnet transactions. Predicts transaction success with 82.5% accuracy. Key features: compute units (39.4%), account count (30.4%), instruction complexity (26.1%).
+    </p>
+    <div className="flex items-center gap-2 text-sm text-white/40">
+      <span className="font-mono">models/success_classifier.pkl</span>
+      <span>•</span>
+      <span>82.5% accuracy</span>
+    </div>
+  </div>
+  <div className="md:col-span-3 p-6 rounded-xl bg-black/50 border border-white/5 font-mono text-xs space-y-2">
+    <div className="text-white/40">
+      <span className="text-purple-400">Input:</span> <span className="text-white/80">Jupiter swap (8 instructions, 25 accounts)</span>
+    </div>
+    <div className="text-white/40">
+      <span className="text-purple-400">Compute Units:</span> <span className="text-yellow-400">284,000 CU</span>
+    </div>
+    <div className="text-white/40">
+      <span className="text-purple-400">Analysis:</span> <span className="text-white/80">Feature extraction...</span>
+    </div>
+    <div className="h-px bg-white/10 my-3"></div>
+    <div className="text-white/40">
+      <span className="text-green-400">ML Prediction:</span> <span className="text-green-400 font-semibold">✓ Success (78.9% confidence)</span>
+    </div>
+    <div className="text-white/40">
+      <span className="text-purple-400">Model:</span> <span className="text-white/80">Random Forest (trained on 400 tx)</span>
+    </div>
+    <div className="pt-3 text-gray-500">
+      // 82.5% accuracy, 88.7% precision
+    </div>
+  </div>
+</div>
 
           {/* FEATURES 2 & 3 */}
           <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -791,10 +830,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Dashboard Section */}
-      <section className="relative py-20 px-6 border-t border-white/5">
-        <DashboardSection />
-      </section>
+      {/* Dashboard Section - Future feature */}
+{/* <section className="relative py-20 px-6 border-t border-white/5">
+  <DashboardSection />
+</section> */}
 
       {/* Demo */}
       <section id="demo" className="relative py-32 px-6 border-t border-white/5">
