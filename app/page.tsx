@@ -322,7 +322,7 @@ export default function Home() {
                 <span className="text-xs text-red-400 font-medium uppercase tracking-wider">The Problem</span>
               </div>
               <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                $500M wasted annually
+                $150M wasted annually
                 <br />
                 <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
                   on failed transactions
