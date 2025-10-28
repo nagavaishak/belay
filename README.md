@@ -6,7 +6,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![Solana](https://img.shields.io/badge/Solana-Mainnet-green)](https://solana.com/)
 
-🔗 **[Live Demo](https://belay-demo.vercel.app)** | **[Documentation](#documentation)** | **[GitHub](https://github.com/nagavaishak/belay)**
+🔗 **[Live Demo](https://belaysdk.netlify.app)** | **[Documentation](#documentation)** | **[GitHub](https://github.com/nagavaishak/belay)**
 
 ---
 
@@ -223,45 +223,6 @@ const belay = new Belay({
 
 ---
 
-## 🧪 Testing
-
-### Read-Only Tests (No Wallet Required)
-
-```bash
-npm run test-belay-readonly
-```
-
-Tests:
-- ✅ ML model predictions
-- ✅ Network monitoring
-- ✅ Fee calculations
-- ✅ RPC health checks
-
-### Devnet Tests (Requires Devnet SOL)
-
-```bash
-npm run test-belay
-```
-
-Tests:
-- ✅ End-to-end transaction flow
-- ✅ Retry mechanism
-- ✅ Multi-RPC failover
-- ✅ ML optimization
-
-### ML Model Tests
-
-```bash
-npm run test-ml
-```
-
-Tests:
-- ✅ Compute unit predictions
-- ✅ Success probability scoring
-- ✅ Model accuracy validation
-
----
-
 ## 📈 Performance Metrics
 
 ### Recovery Performance
@@ -426,18 +387,18 @@ Solo-built in 2 weeks:
 
 **Contact:**
 - GitHub: [@nagavaishak](https://github.com/nagavaishak)
-- Email: [your-email@example.com]
-- Twitter: [@your-handle]
+- Email: [nagavaishak@gmail.com]
+- LinkedIn: [https://www.linkedin.com/in/naga-vaishak-a322b2204/]
 
 ---
 
 ## 📞 Resources
 
-- 🌐 **Website:** [belay-demo.vercel.app](https://belay-demo.vercel.app)
+- 🌐 **Website:** [belaysdk.netlify.app](https://belaysdk.netlify.app)
 - 📖 **Documentation:** [GitHub README](https://github.com/nagavaishak/belay#readme)
 - 💻 **GitHub:** [github.com/nagavaishak/belay](https://github.com/nagavaishak/belay)
-- 🎥 **Demo Video:** [Link to video]
-- 📊 **Pitch Deck:** [Link to deck]
+- 🎥 **Demo Video:** [Uploading Soon]
+- 📊 **Pitch Deck:** [Uploading Soon]
 
 ---
 
