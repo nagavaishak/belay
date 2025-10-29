@@ -134,7 +134,7 @@ export default function Home() {
 
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 backdrop-blur-sm">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span className="text-xs text-green-400 font-medium">Production-Ready • Tested on Mainnet</span>
+                <span className="text-xs text-green-400 font-medium">Production-Ready • Tested on Devnet</span>
               </div>
 
               {/* UPDATED HEADLINE */}
