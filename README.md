@@ -387,8 +387,8 @@ Solo-built in 2 weeks:
 
 **Contact:**
 - GitHub: [@nagavaishak](https://github.com/nagavaishak)
-- Email: [nagavaishak@gmail.com]
-- LinkedIn: [https://www.linkedin.com/in/naga-vaishak-a322b2204/]
+- Email: nagavaishak@gmail.com
+- LinkedIn: https://www.linkedin.com/in/naga-vaishak-a322b2204/
 
 ---
 
@@ -397,8 +397,8 @@ Solo-built in 2 weeks:
 - 🌐 **Website:** [belaysdk.netlify.app](https://belaysdk.netlify.app)
 - 📖 **Documentation:** [GitHub README](https://github.com/nagavaishak/belay#readme)
 - 💻 **GitHub:** [github.com/nagavaishak/belay](https://github.com/nagavaishak/belay)
-- 🎥 **Demo Video:** [Uploading Soon]
-- 📊 **Pitch Deck:** [Uploading Soon]
+- 🎥 **Demo Video:** https://www.youtube.com/watch?v=1okppgI101Q
+- 📊 **Pitch Deck:** https://youtu.be/mWTYxtYXvhU
 
 ---
 
